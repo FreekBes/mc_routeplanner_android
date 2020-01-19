@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Routeplanner voor Freeks Realm</string>
+    <string name="app_name_short">Routeplanner Realm</string>
+    <string name="app_name_shortest">Routeplanner</string>
+    <string name="app_name_with_world">Routeplanner %1$s</string>
+
+    <!-- loading interface -->
+    <string name="loading_text">Bezig met laden...</string>
+    <string name="loading_details_worlds">Werelden ophalen...</string>
+    <string name="loading_details_data">Data ophalen...</string>
+
+    <!-- main interface -->
+    <string name="main_world_selector_tooltip">Selecteer een wereld</string>
+    <string name="main_from_text">Van:</string>
+    <string name="main_to_text">Naar:</string>
+    <string name="main_input_from_hint">waar ben je nu?</string>
+    <string name="main_input_to_hint">waar wil je naartoe?</string>
+    <string name="main_submit_button">Plan mijn reis</string>
+
+    <!-- item picker -->
+    <string name="item_picker_input_hint">Typ een zoekterm&#8230;</string>
+    <string name="item_picker_no_results">Geen resultaten gevonden.</string>
+
+    <!-- alert dialogs -->
+    <string name="alert_no_internet_title">Geen internetverbinding</string>
+    <string name="alert_no_internet_content">Een internetverbinding is vereist om deze app te kunnen gebruiken. Maak verbinding met het internet en probeer het opnieuw.</string>
+    <string name="alert_unknown_error_title">Fout</string>
+    <string name="alert_unknown_error_content">Er is een onbekende fout opgetreden. De app wordt nu afgesloten.</string>
+</resources>

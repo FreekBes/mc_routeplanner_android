@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorPrimary">#1E90FF</color>
+    <color name="colorPrimaryDark">#1873CC</color>
+    <color name="colorAccent">#1E90FF</color>
+
+    <color name="mainBackground">#383839</color>
+    <color name="inputBackground">#2D2E2E</color>
+
+    <color name="mainTextColor">#EDEDED</color>
+    <color name="secondaryTextColor">#CACACA</color>
+</resources>
