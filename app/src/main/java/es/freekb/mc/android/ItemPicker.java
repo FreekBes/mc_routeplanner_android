@@ -105,7 +105,7 @@ public class ItemPicker extends AppCompatActivity {
                 url += "&w=" + w;
             }
 
-            StringRequest worldsGetter = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
+            StringRequest req = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
                 @Override
                 public void onResponse(String response) {
                     ArrayList<Item> items = new ArrayList<Item>();
@@ -138,7 +138,7 @@ public class ItemPicker extends AppCompatActivity {
 
             };
 
-            AppController.addToRequestQueue(ctx, worldsGetter, tag_string_req);
+            AppController.addToRequestQueue(ctx, req, tag_string_req);
         }
         else {
             itemAdapter.updateItems(new ArrayList<Item>());

@@ -12,7 +12,28 @@ import android.widget.RelativeLayout;
 
 import org.json.JSONArray;
 
+import java.sql.Timestamp;
+import java.text.DateFormat;
+import java.util.Date;
+
 public class Useful {
+    public static long getDistance(int[] from, int[] to) {
+        int a = from[0] - to[0];
+        int b = from[2] - to[2];
+        return Math.round(Math.sqrt(a * a + b * b));
+    }
+
+    public static long getTimeOfArrival(int secondsToAddToCurrentTime) {
+        return System.currentTimeMillis() + secondsToAddToCurrentTime * 1000;
+    }
+
+    public static String formatTime(Context ctx, long timestamp) {
+        DateFormat timeFormat = android.text.format.DateFormat.getTimeFormat(ctx);
+        Date time = new Date();
+        time.setTime(timestamp);
+        return timeFormat.format(time);
+    }
+
     public static int[] jsonArrayToIntArray(JSONArray jsonArray) {
         int[] intArray = new int[jsonArray.length()];
         for (int i = 0; i < intArray.length; ++i) {

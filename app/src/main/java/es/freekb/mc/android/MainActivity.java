@@ -94,11 +94,37 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        submitButton.setEnabled(false);
+        submitButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent plannerIntent = planner.getPlannerIntent(MainActivity.this);
+                if (plannerIntent != null) {
+                    startActivity(plannerIntent);
+                }
+            }
+        });
+
         loadingLayout.setVisibility(View.VISIBLE);
         mainLayout.setVisibility(View.GONE);
 
         worlds = new Worlds(MainActivity.this);
-        planner = new Planner();
+        planner = new Planner(new Planner.PlannerListener() {
+            @Override
+            public void routeCalculated(Route route) {
+                // wrong route calculated event! Use the listener in RouteActivity instead.
+            }
+
+            @Override
+            public void routeCalculateError(String errorMessage) {
+                // wrong event, see above
+            }
+
+            @Override
+            public void readyStateChanged(boolean ready) {
+                submitButton.setEnabled(ready);
+            }
+        });
 
         handler = new Handler();
         fetchWorlds = new Runnable() {

@@ -8,6 +8,7 @@
     <string name="loading_text">Bezig met laden...</string>
     <string name="loading_details_worlds">Werelden ophalen...</string>
     <string name="loading_details_data">Data ophalen...</string>
+    <string name="loading_calculating_route">Route ophalen...</string>
 
     <!-- main interface -->
     <string name="main_world_selector_tooltip">Selecteer een wereld</string>
@@ -21,14 +22,20 @@
     <string name="item_picker_input_hint">Typ een zoekterm&#8230;</string>
     <string name="item_picker_no_results">Geen resultaten gevonden.</string>
 
+    <!-- timeline -->
+    <string name="timeline_walk_instructions">Loop %1$d blokken naar %2$s %3$s (%4$d, %5$d, %6$d)</string>
+
     <!-- alert dialogs -->
     <string name="alert_no_internet_title">Geen internetverbinding</string>
     <string name="alert_no_internet_content">Een internetverbinding is vereist om deze app te kunnen gebruiken. Maak verbinding met het internet en probeer het opnieuw.</string>
     <string name="alert_unknown_error_title">Fout</string>
-    <string name="alert_unknown_error_content">Er is een onbekende fout opgetreden. De app wordt nu afgesloten.</string>
+    <string name="alert_unknown_error_content">Er is een onbekende fout opgetreden.</string>
+    <string name="alert_route_calculate_error">Kon route niet berekenen</string>
+    <string name="alert_could_not_display_route">Route kan niet worden weergegeven door een fout.</string>
 
     <!-- internal stuff -->
     <string name="internal_default_name_operator">Spoorwegen B.V.</string>
+    <string name="internal_default_abbr_operator">SBV</string>
     <string name="internal_connection_type_train">Trein</string>
     <string name="internal_connection_type_subway">Metro</string>
     <string name="internal_connection_type_ring_line">Ringlijn</string>
@@ -36,4 +43,22 @@
     <string name="internal_connection_type_ferry">Veerboot</string>
     <string name="internal_connection_type_mine">Mijnspoor</string>
     <string name="internal_connection_type_default">Verbinding</string>
+    <string name="internal_platform">Spoor</string>
+    <string name="internal_platform_with_number">Spoor %1$d</string>
+    <string name="internal_direction">richting %1$s</string>
+    <string name="internal_route_from_to">Route van %1$s naar %2$s</string>
+
+    <!-- route warnings -->
+    <string name="route_warning_single_track">Dit traject gaat gedeeltelijk over enkelspoor.</string>
+    <string name="route_warning_skeletons">Op dit traject kunnen veel skeletons voorkomen.</string>
+    <string name="route_warning_zombies">Op dit traject kunnen veel zombies voorkomen.</string>
+    <string name="route_warning_shared_platform">Dit traject gaat langs een gedeeld perron.</string>
+    <string name="route_warning_mine_track">Deze route gaat over een mijnspoor.</string>
+    <string name="route_warning_own_minecart">Voor dit traject moet je je eigen minecart meenemen!</string>
+    <string name="route_warning_cactus_breaker">Dit traject wordt onderbroken door een cactus. Je zult daar opnieuw in moeten stappen.</string>
+    <string name="route_warning_no_stop_take_off">De minecart zal gelijk wegrijden bij het drukken op de knop. Stap snel in!</string>
+    <string name="route_warning_no_fence">Langs dit traject staat geen hek! Pas op voor mobs op het spoor.</string>
+    <string name="route_warning_messy">Dit traject is erg rommelig!</string>
+    <string name="route_warning_left_side">Op dit traject wordt links aangehouden.</string>
+    <string name="route_warning_lever_for_minecart">Op dit traject moet je levers omschakelen in plaats van op knoppen drukken om minecarts te verkrijgen.</string>
 </resources>

@@ -10,4 +10,5 @@
 
     <color name="mainTextColor">#EDEDED</color>
     <color name="secondaryTextColor">#CACACA</color>
+    <color name="tertiaryTextColor">#7A7A7A</color>
 </resources>

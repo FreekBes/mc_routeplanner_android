@@ -53,7 +53,7 @@ public class AppController extends Application {
         new AlertDialog.Builder(ctx)
                 .setTitle(ctx.getString(R.string.alert_no_internet_title))
                 .setMessage(ctx.getString(R.string.alert_no_internet_content))
-                .setNeutralButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+                .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         System.exit(0);
@@ -66,7 +66,7 @@ public class AppController extends Application {
         new AlertDialog.Builder(ctx)
                 .setTitle(ctx.getString(R.string.alert_unknown_error_title))
                 .setMessage(ctx.getString(R.string.alert_unknown_error_content))
-                .setNeutralButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+                .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         System.exit(0);

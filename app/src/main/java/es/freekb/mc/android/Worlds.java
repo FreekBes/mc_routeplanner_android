@@ -100,7 +100,7 @@ public class Worlds {
         String tag_string_req = "worldsgetter";
         String url = AppController.mainUrl + "worlds.json";
 
-        StringRequest worldsGetter = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
+        StringRequest req = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 try {
@@ -126,6 +126,6 @@ public class Worlds {
 
         };
 
-        AppController.addToRequestQueue(ctx, worldsGetter, tag_string_req);
+        AppController.addToRequestQueue(ctx, req, tag_string_req);
     }
 }

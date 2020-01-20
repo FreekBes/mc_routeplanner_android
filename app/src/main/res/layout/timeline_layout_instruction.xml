@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="start|center_vertical"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/textOperator"
+        android:layout_width="46sp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/internal_default_abbr_operator"
+        android:textColor="@color/colorAccent"
+        android:textSize="12sp"
+        android:textStyle="italic" />
+
+    <ImageView
+        android:id="@+id/timelineIcon"
+        android:layout_width="40sp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="6sp"
+        android:layout_marginEnd="6sp"
+        android:clickable="true"
+        android:paddingStart="4sp"
+        android:paddingEnd="4sp"
+        android:scaleType="fitXY"
+        android:tint="@color/colorAccent"
+        android:tintMode="src_atop"
+        app:srcCompat="@drawable/timeline_line" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:minHeight="70sp"
+        android:orientation="vertical"
+        android:paddingStart="6sp"
+        android:paddingTop="20sp"
+        android:paddingEnd="6sp"
+        android:paddingBottom="20sp">
+
+        <TextView
+            android:id="@+id/textMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Neem deze lijn"
+            android:textColor="@color/mainTextColor"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textExtra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="richting Dit Station"
+            android:textColor="@color/secondaryTextColor" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/expandButton"
+        android:layout_width="34sp"
+        android:layout_height="match_parent"
+        android:background="@color/colorTransparent"
+        android:scaleType="center"
+        android:src="@drawable/unfold_more"
+        android:tint="@color/tertiaryTextColor" />
+</LinearLayout>
