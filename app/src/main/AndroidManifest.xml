@@ -13,7 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="false"
         android:theme="@style/AppTheme">
-        <activity android:name=".ItemPicker"></activity>
+        <activity android:name=".RouteActivity"></activity>
+        <activity android:name=".ItemPicker" />
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait">

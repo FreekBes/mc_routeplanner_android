@@ -26,4 +26,14 @@
     <string name="alert_no_internet_content">Een internetverbinding is vereist om deze app te kunnen gebruiken. Maak verbinding met het internet en probeer het opnieuw.</string>
     <string name="alert_unknown_error_title">Fout</string>
     <string name="alert_unknown_error_content">Er is een onbekende fout opgetreden. De app wordt nu afgesloten.</string>
+
+    <!-- internal stuff -->
+    <string name="internal_default_name_operator">Spoorwegen B.V.</string>
+    <string name="internal_connection_type_train">Trein</string>
+    <string name="internal_connection_type_subway">Metro</string>
+    <string name="internal_connection_type_ring_line">Ringlijn</string>
+    <string name="internal_connection_type_tram">Tram</string>
+    <string name="internal_connection_type_ferry">Veerboot</string>
+    <string name="internal_connection_type_mine">Mijnspoor</string>
+    <string name="internal_connection_type_default">Verbinding</string>
 </resources>
